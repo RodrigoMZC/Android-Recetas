@@ -1,0 +1,101 @@
+{
+  "recetas": [
+    {
+      "nombre": "Enchiladas Suizas",
+      "img": "enchiladas_suizas",
+      "ingredientes": [
+        "12 tortillas de maíz",
+        "2 tazas de pollo deshebrado",
+        "1 taza de crema ácida",
+        "1 taza de queso manchego rallado",
+        "1 taza de salsa verde",
+        "1/2 taza de caldo de pollo",
+        "1/4 de cebolla picada",
+        "1 diente de ajo picado",
+        "1 cucharada de aceite",
+        "Sal y pimienta al gusto"
+      ],
+      "preparación": [
+        "Calienta el aceite en un sartén y sofríe la cebolla y el ajo.",
+        "Agrega la salsa verde y el caldo de pollo, cocina por 5 minutos.",
+        "Sumerge las tortillas en la salsa y rellénalas con pollo deshebrado.",
+        "Enrolla las tortillas y colócalas en un refractario engrasado.",
+        "Cubre con crema y queso rallado.",
+        "Hornea a 180°C por 15 minutos hasta que el queso gratine.",
+        "Sirve caliente y disfruta."
+      ]
+    },
+    {
+      "nombre": "Pozole Rojo",
+      "img": "pozolerojo",
+      "ingredientes": [
+        "1 kg de maíz pozolero precocido",
+        "1 kg de carne de cerdo (espinazo o pierna)",
+        "2 chiles guajillo desvenados y remojados",
+        "2 chiles ancho desvenados y remojados",
+        "1/2 cebolla",
+        "2 dientes de ajo",
+        "2 litros de agua",
+        "1 cucharadita de orégano",
+        "Sal al gusto",
+        "Rábanos en rodajas",
+        "Lechuga picada",
+        "Cebolla picada",
+        "Limones partidos"
+      ],
+      "preparación": [
+        "Hierve el maíz en agua hasta que reviente.",
+        "Cuece la carne con cebolla, ajo y sal hasta que esté suave.",
+        "Licúa los chiles con un poco de agua y cuélalos.",
+        "Agrega la carne desmenuzada y la salsa de chiles al maíz.",
+        "Cocina por 30 minutos más, ajusta la sal y el orégano.",
+        "Sirve con rábanos, lechuga, cebolla y limón."
+      ]
+    },
+    {
+      "nombre": "Aguachile Verde",
+      "img": "aguachile_nayarit",
+      "ingredientes": [
+        "500 g de camarones crudos y limpios",
+        "1/2 taza de jugo de limón",
+        "1/2 taza de pepino en rodajas",
+        "1/2 taza de cilantro",
+        "1 chile serrano",
+        "1 diente de ajo",
+        "1/4 de cebolla",
+        "Sal y pimienta al gusto",
+        "Aguacate en rodajas"
+      ],
+      "preparación": [
+        "Licúa el jugo de limón con el cilantro, chile, ajo y cebolla.",
+        "Coloca los camarones en un recipiente y cúbrelos con la salsa.",
+        "Refrigera por 15-20 minutos hasta que los camarones cambien de color.",
+        "Sirve con pepino, aguacate y acompaña con tostadas."
+      ]
+    },
+    {
+      "nombre": "Coctel de Mariscos",
+      "img": "conteldecamarones",
+      "ingredientes": [
+        "500 g de camarones cocidos",
+        "250 g de pulpo cocido y picado",
+        "250 g de almejas o mejillones cocidos",
+        "1/2 taza de jugo de limón",
+        "1/2 taza de salsa cátsup",
+        "1/2 taza de clamato",
+        "1/4 de cebolla picada",
+        "1/2 taza de tomate picado",
+        "1/2 taza de cilantro picado",
+        "1 chile serrano picado",
+        "Sal y pimienta al gusto",
+        "Aguacate en cubos"
+      ],
+      "preparación": [
+        "Mezcla el jugo de limón, la cátsup y el clamato en un tazón.",
+        "Agrega los mariscos, la cebolla, el tomate, el cilantro y el chile.",
+        "Revuelve bien y deja reposar 10 minutos.",
+        "Sirve frío con aguacate y acompaña con galletas saladas."
+      ]
+    }
+  ]
+}

@@ -38,7 +38,7 @@ fun TitleView(name: String, color: Color) {
 
 @Composable
 fun Spacers() {
-    Spacer(modifier = Modifier.height(10.dp))
+    Spacer(modifier = Modifier.height(16.dp))
 }
 
 @Composable
@@ -86,4 +86,8 @@ fun CardItem(name: String, img: Int, onClick: () -> Unit) {
 
         }
     }
+}
+
+fun MainItem() {
+
 }

@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.recetas.ui.theme.RecetasTheme
 import com.example.recetas.views.HomeView
+import com.example.recetas.views.RecipeView
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,5 +28,6 @@ class MainActivity : ComponentActivity() {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    HomeView()
+    //HomeView()
+    RecipeView()
 }

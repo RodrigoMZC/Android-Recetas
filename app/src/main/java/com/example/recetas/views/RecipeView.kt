@@ -1,8 +1,7 @@
 package com.example.recetas.views
 
 import android.annotation.SuppressLint
-import android.widget.Space
-import androidx.annotation.ContentView
+import android.graphics.drawable.Icon
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -13,6 +12,8 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
@@ -27,16 +28,17 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import com.example.recetas.R
+import com.example.recetas.components.MainIconButton
 import com.example.recetas.components.Spacers
 import com.example.recetas.components.TitleBar
 import com.example.recetas.ui.theme.FontColor
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
-@Preview
 @Composable
-fun RecipeView() {
+fun RecipeView(navController: NavController) {
     Scaffold(
         topBar = {
             CenterAlignedTopAppBar(
@@ -44,17 +46,22 @@ fun RecipeView() {
                     TitleBar("Enchiladas Suizas")
                 },
                 colors =
-                    TopAppBarDefaults.centerAlignedTopAppBarColors(containerColor = FontColor)
+                    TopAppBarDefaults.centerAlignedTopAppBarColors(containerColor = FontColor),
+                navigationIcon = {
+                    MainIconButton(Icons.AutoMirrored.Filled.ArrowBack) {
+                        navController.popBackStack()
+                    }
+                }
             )
         }
 
     ) {
-        com.example.recetas.views.ContentView()
+        ContentView(navController)
     }
 }
 
 @Composable
-private fun ContentView() {
+private fun ContentView(navController: NavController) {
     Box(
         modifier = Modifier
             .fillMaxSize()

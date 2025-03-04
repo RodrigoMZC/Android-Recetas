@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
 import com.example.recetas.R
 import com.example.recetas.components.ActionButton
 import com.example.recetas.components.CardItem
@@ -23,9 +24,8 @@ import com.example.recetas.ui.theme.ItemColor
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
-@Preview
 @Composable
-fun HomeView() {
+fun HomeView(navController: NavController) {
     Scaffold(
         topBar = {
             CenterAlignedTopAppBar(
@@ -42,13 +42,13 @@ fun HomeView() {
             ActionButton(ItemColor)
         }
     ) {
-        ContentView()
+        ContentView(navController)
     }
 }
 
 //@Preview
 @Composable
-private fun ContentView() {
+private fun ContentView(navController: NavController) {
     val recetas = listOf(
         Pair("Enchiladas Suizas", R.drawable.enchiladas_suizas),
         Pair("Pozole Rojo", R.drawable.pozolerojo),
@@ -66,7 +66,9 @@ private fun ContentView() {
             CardItem(
                 name = receta.first,
                 img = receta.second,
-                onClick = { }
+                onClick = {
+                    navController.navigate("Detalle")
+                }
             )
         }
     }

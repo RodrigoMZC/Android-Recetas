@@ -49,25 +49,52 @@ fun HomeView(navController: NavController) {
 //@Preview
 @Composable
 private fun ContentView(navController: NavController) {
-    val recetas = listOf(
-        Pair("Enchiladas Suizas", R.drawable.enchiladas_suizas),
+    /*val recetas = listOf(
+        Pair("Enchiladas Suizas", R.drawable.enchiladas_suizas, "Detalle"),
         Pair("Pozole Rojo", R.drawable.pozolerojo),
         Pair("Aguachile Verde", R.drawable.aguachile_nayarit),
         Pair("Coctel de de mariscos", R.drawable.cocteldecamarones)
     )
-
+*/
     LazyColumn(
         modifier = Modifier.fillMaxSize()
             .background(BackGround),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        items(recetas) { receta ->
+        item {
             CardItem(
-                name = receta.first,
-                img = receta.second,
+                name = "Enchiladas Suizas",
+                img = R.drawable.enchiladas_suizas,
                 onClick = {
                     navController.navigate("Detalle")
+                }
+            )
+        }
+        item {
+            CardItem(
+                name = "Pozole Rojo",
+                img = R.drawable.pozolerojo,
+                onClick = {
+                    navController.navigate("PozoleView")
+                }
+            )
+        }
+        item {
+            CardItem(
+                name = "Aguachile",
+                img = R.drawable.aguachile_nayarit,
+                onClick = {
+                    navController.navigate("AguachileView")
+                }
+            )
+        }
+        item {
+            CardItem(
+                name = "Coctel de de mariscos",
+                img = R.drawable.cocteldecamarones,
+                onClick = {
+                    navController.navigate("CoctelView")
                 }
             )
         }

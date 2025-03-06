@@ -94,7 +94,7 @@ private fun ContentView(navController: NavController) {
                 name = "Coctel de de mariscos",
                 img = R.drawable.cocteldecamarones,
                 onClick = {
-                    navController.navigate("CoctelView ")
+                    navController.navigate("CoctelView")
                 }
             )
         }

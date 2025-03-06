@@ -34,7 +34,7 @@ fun MainIconButton(icon: ImageVector, onClick: () -> Unit) {
         Icon(
             imageVector = icon,
             contentDescription = null,
-            tint = Color.White
+            tint = Color.Black
         )
     }
 }

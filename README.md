@@ -11,6 +11,6 @@ Una aplicación de **Kotlin** que te permite navegar por tus recetas favoritas
 
 ## 📷 Vistas principales
 ### 🏠 Pantalla principal (`HomeView`)
-![Pantalla principal](ScreenShots/Screenshot_20250306_144348.png)
+![Pantalla principal](ScrenShots/Screenshot_20250306_144348.png)
 ### 🍳 Vista Previa 
-![Pantalla principal](ScreenShots/Screen_recording_20250306_144721.webm)
+![Pantalla principal](ScrenShots/Screen_recording_20250306_144721.webm)

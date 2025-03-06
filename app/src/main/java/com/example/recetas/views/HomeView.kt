@@ -30,7 +30,7 @@ fun HomeView(navController: NavController) {
         topBar = {
             CenterAlignedTopAppBar(
                 title = {
-                    TitleBar("Resetario Fancy")
+                    TitleBar("Recetario Fancy")
                 },
                 colors =
                     TopAppBarDefaults.centerAlignedTopAppBarColors(
